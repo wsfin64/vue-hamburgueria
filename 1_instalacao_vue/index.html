@@ -16,11 +16,11 @@
         <p>Meu nome é: {{name}} </p>
         <hr>
         <form id="app-form-image">
-            <input type="text" v-model=input_image placeholder="Digite a url da imagem"> <!-- Texto de entrada vai para a variável input_name -->
+            <input type="text" v-model=input_image placeholder="Digite a url da imagem"> <!-- Texto de entrada vai para a variável input_image -->
             <input type="submit" value="Enviar" v-on:click="submitImage">
         </form>
         <p>
-            <img  v-bind:src=image alt="" >
+            <img  v-bind:src=image alt="" >  <!-- o v-bind cria uma ligação entre uma variavel e um atributo -->
         </p>
     </div>
 </body>
